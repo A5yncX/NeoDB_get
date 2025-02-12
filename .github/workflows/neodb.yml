@@ -1,5 +1,9 @@
 name: Sync NeoDB Data
 
+# 允许 GitHub Actions 拥有写入仓库的权限
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "0 17 * * *"
