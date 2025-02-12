@@ -117,6 +117,9 @@ jobs:
 
       - name: Download NeoDB Cover
         run: |
+          # 确保 cover 目录存在
+          mkdir -p data/neodb/cover
+
           # 检查 movie 目录是否存在，如果不存在则创建
           if [ ! -d "movie" ]; then
             mkdir movie
